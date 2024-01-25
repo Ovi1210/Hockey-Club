@@ -72,6 +72,17 @@
         border-radius: 12px;
         background: rgba(19, 19, 24, 0.03);
       }
+      .head-div {
+        border-radius: 16px;
+        background: #131318;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+      }
+      .caro-bottom{
+        background-image: url(B9A3-Hockeys-main/Images/1.png);
+      }
     </style>
   </head>
   <body>
@@ -126,8 +137,8 @@
       </div>
       <section class="slider mt-16 mx-6 lg:mx-auto">
         <div class="carousel w-full">
-          <div id="slide1" class="carousel-item relative w-full">
-            <img src="B9A3-Hockeys-main/Images/1.png" class="w-full" />
+          <div id="slide1" class="carousel-item relative w-full flex flex-col lg:flex-row">
+              <img src="B9A3-Hockeys-main/Images/1.png" alt="">
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
             >
@@ -164,6 +175,16 @@
           </div>
         </div>
       </section>
+      <section class="static lg:relative">
+        <div class="lg:w-[566px] head-div lg:absolute bottom-0 left-0 lg:left-[56%] mb-0 lg:mb-9 mx-6 lg:mx-0 p-1 lg:p-8">
+          <h2 class="font-extrabold text-2xl text-white">
+            Meet all the heroes from the field
+          </h2>
+          <p class="font-medium text-[#ffffff99] w-full">
+            Connect with the passionate players who redefine dedication on the hockey field.
+          </p>
+      </section>
+    </div>
     </header>
     <main class="max-w-[1400px] mx-auto">
       <hr
@@ -580,6 +601,96 @@
       <hr
         class="mt-24 border-t-1 border-dashed border-royal-blue opacity-[0.3] w-[80%] mx-auto"
       />
+      <section class="clients-question">
+        <h2 class="text-center text-royal-blue mt-8 text-4xl font-extrabold">
+          Clients Question
+        </h2>
+        <p
+          class="text-center max-w-[606px] mx-auto mt-6 font-medium text-[16px]"
+        >
+          Explore our Clients' Questions for insights, FAQs, and community
+          discussions. Join our hockey club for a vibrant interactive
+          experience!
+        </p>
+      </section>
+      <hr
+        class="mt-8 border-t-1 border-dashed border-royal-blue opacity-[0.3] w-[80%] mx-auto"
+      />
+      <section class="clients-faq mt-12 mx-6 lg:mx-0">
+        <div
+          class="card card-side bg-base-100 border-2 border-black border-opacity-5 flex-col lg:flex-row gap-10 p-8"
+        >
+          <figure>
+            <img src="B9A3-Hockeys-main/Images/11.png" alt="FAQ" />
+          </figure>
+          <div class="flex-1">
+            <div class="collapse collapse-plus bg-white">
+              <input type="radio" name="my-accordion-3" checked="checked" />
+              <div class="collapse-title text-xl font-bold">Our Equipment</div>
+              <div class="collapse-content">
+                <p class="text-[#13131899]">
+                  Explore top-notch gear fueling our team's precision, power,
+                  and victories.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-white">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-bold">
+                Hockey Training
+              </div>
+              <div class="collapse-content">
+                <p class="text-[#13131899]">
+                  Elevate your game with dynamic, efficient, and focused hockey
+                  training.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-white">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-bold">
+                Private Lessons
+              </div>
+              <div class="collapse-content">
+                <p class="text-[#13131899]">
+                  Elevate skills with personalized guidance in exclusive
+                  one-on-one hockey lessons.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-white">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-bold">Ski Touring</div>
+              <div class="collapse-content">
+                <p class="text-[#13131899]">
+                  Experience exhilarating ski touring adventures with our
+                  dynamic hockey club!
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-white">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-bold">Booking</div>
+              <div class="collapse-content">
+                <p class="text-[#13131899]">
+                  Secure your ice time effortlessly with our streamlined online
+                  booking.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-white">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-bold">Pricings</div>
+              <div class="collapse-content">
+                <p class="text-[#13131899]">
+                  Explore our affordable and flexible pricing options for hockey
+                  enthusiasts.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="get-in">
         <h2 class="text-center text-royal-blue mt-8 text-4xl font-extrabold">
           Get In Touch
@@ -596,17 +707,17 @@
       />
       <section class="get-in-form flex flex-col lg:flex-row gap-1 lg:gap-6">
         <div class="flex flex-col p-12 gap-7">
-          <div class="get-1 p-8">
+          <div class="get-1 p-8 w-full lg:w-96">
             <img src="B9A3-Hockeys-main/Images/call.png" alt="" />
             <p class="text-[#13131866] font-normal mt-6">Phone Number :</p>
             <p class="text-[20px] font-extrabold">(+62) 123-321-543</p>
           </div>
-          <div class="get-1 p-8">
+          <div class="get-1 p-8 w-full lg:w-96">
             <img src="B9A3-Hockeys-main/Images/call.png" alt="" />
             <p class="text-[#13131866] font-normal mt-6">Phone Number :</p>
             <p class="text-[20px] font-extrabold">(+62) 123-321-543</p>
           </div>
-          <div class="get-3 p-8 border-2">
+          <div class="get-3 p-8 w-full lg:w-96">
             <img src="B9A3-Hockeys-main/Images/call.png" alt="" />
             <p class="text-[#13131866] font-normal mt-6">Phone Number :</p>
             <p class="text-[20px] font-extrabold">(+62) 123-321-543</p>
@@ -699,13 +810,17 @@
         </div>
       </section>
     </main>
-    <footer class="py-9 lg:py-[100px] px-7 lg:px-[136px] bg-foot-color text-[#ffffff99] mt-28 flex flex-col lg:flex-row gap-10 lg:gap-36">
-      <aside class="flex flex-col gap-6 justify-center lg:justify-start items-center lg:items-start">
+    <footer
+      class="py-9 lg:py-[100px] px-7 lg:px-[136px] bg-foot-color text-[#ffffff99] mt-28 flex flex-col lg:flex-row gap-10 lg:gap-36"
+    >
+      <aside
+        class="flex flex-col gap-6 justify-center lg:justify-start items-center lg:items-start"
+      >
         <h2 class="font-extrabold text-[28px] text-white">Get In Touch</h2>
         <p class="w-[367px] font-medium">
           Connect with us at the "Get In Touch" section to share your passion
-          for hockey or discuss collaborations. Your
-          journey with our club starts with a click!
+          for hockey or discuss collaborations. Your journey with our club
+          starts with a click!
         </p>
         <div class="flex gap-2">
           <img
@@ -729,7 +844,9 @@
         </div>
       </aside>
       <div class="grid grid-cols-2 lg:grid-cols-3 w-full gap-0 lg:gap-36">
-        <nav class="flex flex-col gap-2 justify-center lg:justify-start  items-center lg:items-start">
+        <nav
+          class="flex flex-col gap-2 justify-center lg:justify-start items-center lg:items-start"
+        >
           <h6 class="text-white text-[18px]">Company</h6>
           <a class="link link-hover">About us</a>
           <a class="link link-hover">Leadership</a>
@@ -744,7 +861,9 @@
           <a class="link link-hover">Ticket Support</a>
           <a class="link link-hover">Contact Us</a>
         </nav>
-        <nav class="flex flex-col gap-2  justify-center lg:justify-start  items-center lg:items-start col-span-2 lg:col-span-1">
+        <nav
+          class="flex flex-col gap-2 justify-center lg:justify-start items-center lg:items-start col-span-2 lg:col-span-1"
+        >
           <h6 class="text-white text-[18px]">Services</h6>
           <a class="link link-hover">Academy</a>
           <a class="link link-hover">Group Lesson</a>
